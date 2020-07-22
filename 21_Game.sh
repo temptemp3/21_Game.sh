@@ -1,6 +1,6 @@
 #!/bin/bash
 ## 21_Game
-## version 0.0.1 - initial
+## version 0.0.2 - initial
 ##################################################
 shopt -s expand_aliases
 alias bind_variables='
@@ -58,7 +58,7 @@ max_guess() {
   local -i remaining_count
   remaining_count=$( remaining_count )
   case $( remaining_count ) in
-    1|2|3) echo ${remaining_count} ;;
+    1|2) echo ${remaining_count} ;;
     *) echo 3 ;;
   esac
 }
